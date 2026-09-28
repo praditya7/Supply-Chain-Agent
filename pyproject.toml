@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supply-chain-agent"
+version = "0.1.0"
+description = "AI-assisted supply-chain network optimization agent demo"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+supply-chain-agent = "supply_chain_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
