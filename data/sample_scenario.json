@@ -1,0 +1,87 @@
+{
+  "name": "North India Distribution Network",
+  "description": "Toy scenario for choosing regional distribution centers and serving city-level demand.",
+  "facilities": [
+    {
+      "id": "DEL",
+      "name": "Delhi DC",
+      "fixed_cost": 12000,
+      "capacity": 900
+    },
+    {
+      "id": "JPR",
+      "name": "Jaipur DC",
+      "fixed_cost": 8500,
+      "capacity": 600
+    },
+    {
+      "id": "LKO",
+      "name": "Lucknow DC",
+      "fixed_cost": 9000,
+      "capacity": 650
+    },
+    {
+      "id": "IDR",
+      "name": "Indore DC",
+      "fixed_cost": 7600,
+      "capacity": 500
+    }
+  ],
+  "customers": [
+    {
+      "id": "GUR",
+      "name": "Gurugram",
+      "demand": 300
+    },
+    {
+      "id": "JAI",
+      "name": "Jaipur",
+      "demand": 280
+    },
+    {
+      "id": "LUC",
+      "name": "Lucknow",
+      "demand": 260
+    },
+    {
+      "id": "BHO",
+      "name": "Bhopal",
+      "demand": 220
+    },
+    {
+      "id": "KAN",
+      "name": "Kanpur",
+      "demand": 180
+    }
+  ],
+  "transport_costs": {
+    "DEL": {
+      "GUR": 4,
+      "JAI": 7,
+      "LUC": 8,
+      "BHO": 11,
+      "KAN": 7
+    },
+    "JPR": {
+      "GUR": 6,
+      "JAI": 3,
+      "LUC": 10,
+      "BHO": 9,
+      "KAN": 9
+    },
+    "LKO": {
+      "GUR": 9,
+      "JAI": 11,
+      "LUC": 3,
+      "BHO": 8,
+      "KAN": 4
+    },
+    "IDR": {
+      "GUR": 10,
+      "JAI": 8,
+      "LUC": 9,
+      "BHO": 3,
+      "KAN": 8
+    }
+  }
+}
